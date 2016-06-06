@@ -1,71 +1,98 @@
+#title{
+ color: #19bd9b !important;
+ margin-top: 50px;
+}
+#clock {
+ padding-top: 50px;
+}
 .progress {
-  height: 100px !important;
-  margin: 10px 100px 0px 100px
+ height: 100px !important;
+ width: 80%;
+ margin: 10px auto;
+ display: block;
+ box-shadow: 0 0 20px #212121;
 }
 
 .glyphicon {
-  font-size: 200%;
-  margin: 20px 10px 20px 10px;
-  padding: 20px 20px 20px 20px;
-  border: solid 1px #212121;
-  border-radius: 100%;
-  cursor: pointer;
-    color: white;
- 
+ font-size: 200%;
+ /*margin: 20px 10px 20px 10px;*/
+ padding: 20px 20px 20px 20px;
+ border: solid 1px #212121;
+ border-radius: 100%;
+ cursor: pointer;
+   color: white;
+
 }
 
 .glyphicon:hover {
-  opacity: 0.8;
+ opacity: 0.8;
 }
-#play {
-  background: #4CAF50;
-}
-
-#pause {
-  background: #FFC107;
+#play:hover {
+ color: #4CAF50;
 }
 
-#reset {
-  background: #F44336;
+#pause:hover {
+ color: #FFC107;
 }
 
+#reset:hover {
+ color: #F44336;
+}
+#play, #pause, #stop {
+ margin: 10px 5px 10px 5px;
+ transition: .3s;
+}
+
+input:focus {
+ box-shadow: 0 0 0px #212121 !important;
+ border-left:0 solid transparent !important;
+ border-right:0 solid transparent !important;
+ border-top:0 solid transparent !important;
+ background: transparent !important;
+ border-bottom:2px solid #19bd9b !important;
+}
 input {
-  border-radius: 100% !important;
-  border-color: #607d8b !important;
-  background: #607d8b !important;
-  margin: 0px 0px -95px 885px !important;
-  width: 75px !important;
-  height: 75px !important;
-  padding: 20px 20px 20px 20px;
-  font-size: 200% !important;
-  font-family: product sans !important;
-  font-weight: bold !important;
-  text-align:center;
-  color: white !important;
-  
+ transition: 1s;
+border-radius: 0 !important;
+ border-left:0 solid transparent !important;
+ border-right:0 solid transparent !important;
+ border-top:0 solid transparent !important;
+ border-bottom:2px solid white !important;
+ background: transparent !important;
+ margin: 10px 0px 10px 0px;
+ width: 250px !important;
+ height: 75px !important;
+ padding: 20px 20px 20px 20px;
+ font-size: 200% !important;
+ font-family: product sans !important;
+ font-weight: bold !important;
+ text-align:center;
+ color: white !important;
+
 }
 
 p {
-  font-family: product sans;
-  font-size: 300%;
-  font-weight: bold;
-  color: white !important;
-  margin: 0px 0px -70px 100px !important;
+ font-family: Arial;
+ font-size: 300%;
+ font-weight: bold;
+ color: white !important;
+
 }
 
-#buttons {
-  margin-left: 980px
-}
 
-body {
-  margin-top: 200px !important;
-}
-
-#timer 
+#timer
 {
-  font-family: product sans;
-  font-size: 350%;
-  color: white;
-  margin: 0px 0px -90px 585px !important; 
-  font-weight: bold;
+ font-family: arial;
+ font-size: 350%;
+ color: white;
+ font-weight: bold;
+}
+
+@media (max-width: 783px)
+{
+ #title
+ {
+   font-size: 25px;
+   margin-top: 20px;
+ }
 }
