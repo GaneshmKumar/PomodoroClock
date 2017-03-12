@@ -2,7 +2,7 @@
 * @Author: GaNeShKuMaRm
 * @Date:   2017-03-12 11:32:23
 * @Last Modified by:   GaNeShKuMaRm
-* @Last Modified time: 2017-03-12 16:56:35
+* @Last Modified time: 2017-03-12 17:01:19
 */
 
 'use strict';
@@ -115,11 +115,6 @@ function setTimer(min, sec, current)
 }
 
 function runTimer(time) {
-    //alert(count);
-    if(count  == 1)
-    {
-        notify("Finished your work??? It's time for some break");
-    }
     if(count == 2)
     {
         stopTimer();
@@ -156,7 +151,7 @@ function startTimer() {
         {
             sec --;
         }
-    }, 100);
+    }, 1000);
 }
 
 function stopTimer() {
@@ -174,26 +169,4 @@ function setBreakSpec(color, text) {
     $("#clock").css("border-color", color);
     $("#completed p").text(text);
     gradientColor = color;
-}
-
-function notify(message) {
-    //Notification.requestPermission(function(permission) {});
-    if (!("Notification" in window))
-    {
-      alert("This browser does not support desktop notification");
-    }
-    else if (Notification.permission === "granted")
-    {
-      var notification = new Notification(msg);
-    }
-    else if (Notification.permission !== 'denied')
-    {
-      Notification.requestPermission(function(permission)
-      {
-        if (permission === "granted")
-        {
-          var notification = new Notification(msg);
-        }
-      });
-    }
 }
