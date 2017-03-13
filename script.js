@@ -155,7 +155,6 @@ function startTimer() {
 }
 
 function stopTimer() {
-    $("#timer").text(sessionTime);
     init = 0;
     percent = 0;
     paused = true;
