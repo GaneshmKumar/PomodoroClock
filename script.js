@@ -158,7 +158,7 @@ function stopTimer() {
     $("#timer").text(sessionTime);
     init = 0;
     percent = 0;
-    paused = "";
+    paused = true;
     current = 0;
     setGradient();
     clearInterval(interval);
